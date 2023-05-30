@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ENCS3320-My Tiny Webserver</title>
+    <link rel="stylesheet" href="NetworkStyle.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+             <div class="logo"> <a href="#">Web Dev Creative</a> </div>
+             <div>
+                <ul class="links">
+                    <li class="one"><a href="#">Nasralla Hassan</a></li>
+                    <li><a href="#">Anas Naji</a></li>
+                    <li><a href="#">Lotfi Haji</a></li> 
+         </ul> 
+             </div>
+             <div class="yy">
+                <a href="#" class="action_btn">LINKS</a>
+                <div class="linksdiv">
+                    <ul>
+                        <div class="space"></div>
+                        <li ><a  class="links12" href="https://www.w3schools.com/python/gloss_python_multi_line_strings.asp">Link to w3 school</a></li>
+                       <div class="space"></div>
+                        <li ><a class="links13" href="http://127.0.0.1:5500/NetworkProject/Network.html#">Link to html</a></li>
+                    </ul>
+                </div>
+             
+             </div>
+               
+             <div class="toggle_btn">
+                <ion-icon name="menu-outline"></ion-icon>
+             </div>
+            
+        </div>
+
+        <div class="dropdown_menu ">
+            <li><a href="https://www.w3schools.com/python/gloss_python_multi_line_strings.asp">Link to w3schools </a></li>
+            <li><a href="http://127.0.0.1:5500/NetworkProject/Network.html#">lINK TO LOCAL HTML FILE</a></li>
+            
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <h1>Welcome to our course Computer Networks, This is a tiny webserver</h1>
+        </section>
+    </main>
+
+
+
+    <div class="hall-images-div">
+
+        <div class="nsr-div"> 
+            
+                 <img class="nsr-img" 
+                  src="/images/nsr-photo2-removebg.png" alt="photo1">
+                  <p class="details"> Nasralla hassan. I have done projects in many courses, such as in DataBase (Melt resturant system).</p>
+       </div>
+             
+        <div class="loutfi-div">
+            <img class="nsr-img" src="photo.jpg" alt="photo2">
+            <p class="details">Lotfi Haji. 3rd year Computer Science student, I have done many projects throughout university courses, such as a school Managment System in DB course, 
+                a shortest path project which impelemnted dijecstras' Algorithm to find shortest path from one city to another.
+                In addition to perosnal projects such as creating a Facebook copy and much more</p>
+        </div>
+
+        <div class="anas-div">
+            <img class="nsr-img" src="Anas.jpg" alt="">
+            <p class="details">Anas Naji. Computer Science student.</p>
+        </div>
+    </div>
+
+  <script>
+    const toggleBtn= document.querySelector('.toggle_btn')
+    const toggleBtnIcon= document.querySelector('.toggle_btn i')
+    const drodownmenu= document.querySelector('.dropdown_menu')
+
+    toggleBtn.onclick=function(){
+        drodownmenu.classList.toggle('open')
+        const isOpen=dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList=isOpen
+        ? "menu-outline"
+        :"close-outline"
+
+    }
+
+  </script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>    
+</body>
+</html>

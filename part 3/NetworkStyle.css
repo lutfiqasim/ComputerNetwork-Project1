@@ -1,0 +1,247 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url(/images/zz.jpg);
+    background-size: cover;
+    background-position: center;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:rgb(184, 82, 82);
+}
+a:hover{
+    color: orange;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .toggle_btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+.action_btn{
+    background-color: orange;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+     cursor: pointer;
+     transition: scale 0.2s;
+}
+
+.yy{
+    position: relative;
+}
+
+
+
+.linksdiv{
+left: -20PX;
+ top:29px;
+ position: absolute;
+ width: 130px;
+ height: 120px;
+ display: flex;
+ opacity: 0;
+ transition: 0.3s;
+ text-align: center;
+ font-family: roboto,arial;
+
+}
+.linksdiv a{
+    color: deepskyblue;
+}
+.space{
+    height:15px;
+}
+
+
+
+.yy:hover .linksdiv{
+    opacity: 1;
+    background: rgba(174, 156, 156, 0.1);
+    backdrop-filter: blur(95px);
+    border-radius:10px;
+    
+   
+   
+}
+
+.action_btn:hover{
+    scale:1.05;
+    color: white;
+
+}
+.action_btn:active{
+    scale: 0.95;
+}
+
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius:10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open{
+    height: 150px;
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu .action_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media(max-width:992px){
+    .navbar .links,.navbar .action_btn{
+        display: none;
+    } 
+    .navbar .toggle_btn{
+        display: block;
+    }
+}
+
+.dropdown_menu{
+    display: block;
+}
+
+
+@media(max-width:576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+section#hero{
+    height: calc(100vh-60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(110, 188, 208);
+}
+#hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 160px;
+    font-size: 35px;
+  
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.hall-images-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    box-shadow: 0 0 10px rgb(240, 229, 229);
+    border-radius: 14px;
+    margin: 10px;
+    height: 400px;
+    padding: 10px;
+}
+
+.nsr-img{
+    height: 90%;
+    width:100%;
+    object-fit:contain;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    border-radius: 50%;
+    z-index: 1;
+
+}
+.nsr-img:hover{
+    scale: 1.1;
+}
+.nsr-div, .loutfi-div,.anas-div{
+    
+    height: 300px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items:self-start;
+    padding:10px;
+
+}
+
+.nsr-div p, .anas-div p, .loutfi-div p{
+    margin-top: 10px;
+    color: rgb(252, 250, 250);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;  
+    transition: 0.5s; 
+}
+
+
+.nsr-div:hover .details,.loutfi-div:hover .details,.anas-div:hover .details {
+    opacity: 100%;
+    color: black;
+    color: rgb(190, 101, 101);
+  
+}
+
+.links li:hover{
+    scale: 1.2;
+}
+.links li{
+    transition: 0.3s;
+}

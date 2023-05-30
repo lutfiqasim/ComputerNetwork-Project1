@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="This is the description">
+        <title>Store</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <header class="main-header"><!--Header of our page-->
+            <nav class="main-nav nav"><!--Navigation section of page-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            <h1 class="band-name band-name-large">The Imagine</h1>
+        </header>
+        <section class="container content-section">
+            <h2 class="section-header">Music</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                        <span class="shop-item-title">ALBUM 1</span>
+                    <img class="shop-item-image"src="../Album_Covers&Merch/c0050f4a61002f9c8b7ba95d2861f721.910x910x1.jpg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$12.99</span>
+                        <button class="btn btn-primary shop-item-btn" role="button">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">ALBUM 2</span>
+                    <img class="shop-item-image" src="../Album_Covers&Merch/DrlIOe2XcAI33vN.jpg">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$13.99</span>
+                            <button class="btn btn-primary shop-item-btn" role="button">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">ALBUM 3</span>
+                        <img class="shop-item-image" src="../Album_Covers&Merch/images.jpeg">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$14.99</span>
+                            <button class="btn btn-primary shop-item-btn"  role="button">Add To Cart</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">ALBUM 4</span>
+                        <img class="shop-item-image" src="../Album_Covers&Merch/Night_Visions_Album_Cover.jpeg">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$19.99</span>
+                        <button class="btn btn-primary shop-item-btn" role="button">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">MERCH</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                <span class="shop-item-title">Hat</span>
+                <img class="shop-item-image" src="../Album_Covers&Merch/hat.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-btn" role="button">Add To Cart</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">T-Shirt</span>
+                <img class="shop-item-image"src="../Album_Covers&Merch/TShirt.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-btn" role="button">Add To Cart</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Bag</span>
+                <img class="shop-item-image" src="../Album_Covers&Merch/bag.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-btn" role="button">Add To Cart</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Sticker</span>
+                <img class="shop-item-image" src="../Album_Covers&Merch/Sticker.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-btn" role="button">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">Price</span>
+                <span class="cart-quantity cart-header cart-column">Quantity</span>
+            </div>
+            <div class="cart-items">
+                <div  class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="../Album_Covers&Merch/TShirt.jpg" width="100" height="100">
+                        <span class="cart-item-title">T-Shirt</span>
+                    </div>
+                    <span class="cart-price cart-column">$12.99</span>
+                    <div class="cart-quantity cart-column">
+                        <input class="cart-quantity-input" type="number" value="1">
+                        <button class="btn btn-danger" role="button"> Remove</button>
+                    </div>
+                </div>
+                <div  class="cart-row">
+                    <div class="cart-item cart-column">
+                        <img class="cart-item-image" src="../Album_Covers&Merch/Night_Visions_Album_Cover.jpeg" width="100" height="100">
+                        <span class="cart-item-title">Album 4</span>
+                    </div>
+                    <span class="cart-price cart-column">$19.99</span>
+                    <div div class="cart-quantity cart-column">
+                        <input  class="cart-quantity-input" type="number"  value="1">
+                        <button class="btn btn-danger" role="button"> Remove</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-total">
+                <span class="cart-total-title">Total</span>
+                <span class="cart-total-price">$39.97</span>
+            </div>
+                <button class="btn btn-primary btn-purchase" role="button">PURCHASE</button>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="band-name">The Generics</h3>
+                <ul class="nav footer-nav">
+                    <li><a href="https://facebook.com" target="_blank">
+                        <img height="25" src="../logos/Facebook-logo.png">
+                    </a>
+                </li>
+                    <li>
+                        <a href="https://spotify.com" target="_blank">
+                            <img height="25" src="../logos/Spotify_icon.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://youtube.com" target="_blank">
+                            <img height="30" src="../logos/YouTube Logo.png" alt="Not Found">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
