@@ -9,7 +9,7 @@
 body{
     height: 100vh;
     background-color: black;
-    background-image: url(/images/zz.jpg);
+    background-image: url(zz.jpg);
     background-size: cover;
     background-position: center;
 }

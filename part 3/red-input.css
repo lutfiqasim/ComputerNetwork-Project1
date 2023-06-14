@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+@keyframes shake {
+    0%, 100%{ translate: 0;}
+    25% {translate: 8px 0;}
+    75% {translate: -8px 0;}
+}
+
+input{
+    border: 1px solid #FE4567;
+    padding: 10px;
+    border-radius: 4px;
+    background-color:black;
+    background: transparent;
+    color: #F9F9F9;
+    animation:shake 0.14s 3;
+}
+input:focus{
+ 
+}
+
+input:valid{
+    border-color: red;
+    animation: none;
+}
+
+input:invalid{
+    border: 1px solid red;
+    animation:shake 0.14s 3;
+    outline: red;
+}
